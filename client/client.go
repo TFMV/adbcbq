@@ -7,8 +7,8 @@ import (
 
 	"github.com/TFMV/adbcbq/bigquery_driver/bigquery"
 	"github.com/apache/arrow-adbc/go/adbc"
-	"github.com/apache/arrow/go/v15/arrow/memory"
 	"github.com/apache/arrow/go/v18/arrow/array"
+	"github.com/apache/arrow/go/v18/arrow/memory"
 )
 
 // OpenClient initializes a BigQuery client using your local implementation
