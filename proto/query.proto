@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package query;
+
+option go_package = "adbcbq/proto;query";
+
+service QueryService {
+    rpc ExecuteQuery (QueryRequest) returns (QueryResponse);
+}
+
+message QueryRequest {
+    string query = 1;
+}
+
+message QueryResponse {
+    repeated string result = 1;
+}
